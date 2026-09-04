@@ -14,7 +14,7 @@ jobs:
 
             - name: Build Docker image
               run: |
-                docker build . --file DockerFile --tag workflow-test:${ date +%s }
+                docker build . --file DockerFile --tag workflow-test:latest
 
             - name: Install dependencies
               run: |
